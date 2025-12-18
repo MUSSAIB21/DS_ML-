@@ -10,7 +10,7 @@ from data_analysis import load_and_clean_data, extract_openings, create_elo_cate
 from visualize import plot_win_rates, plot_feature_importance
 
 # Configuration
-DATA_PATH = "data/games.csv"
+DATA_PATH = "data/games_metadata_profile_2024_01.csv"
 PROCESSED_PATH = "data/processed_games.csv"
 MODEL_PATH = "models/opening_predictor.pkl"
 RESULTS_DIR = "results"
@@ -131,11 +131,11 @@ def main():
         print("No data found at", DATA_PATH)
 
         # Check for data file
-        if os.path.exists('data/games.csv'):
-            print("Found games.csv, converting to standard format...")
+        if os.path.exists('data/games_metadata_profile_2024_01.csv'):
+            print("Found games_metadata_profile_2024_01.csv, converting to standard format...")
             print(f"Loading {N_GAMES:,} games from dataset...")
 
-            df = pd.read_csv('data/games.csv', nrows=N_GAMES)
+            df = pd.read_csv('data/games_metadata_profile_2024_01.csv', nrows=N_GAMES)
 
             # Rename columns to match expected format
             column_mapping = {
@@ -167,13 +167,13 @@ def main():
             print("ERROR: No chess dataset found!")
             print("="*60)
             print("\nPlease download the chess dataset manually:")
-            print("1. Go to: https://www.kaggle.com/datasnaek/chess")
+            print("1. Go to: https://www.kaggle.com/datasets/shkarupylomaxim/chess-games-dataset-lichess-2017-may")
             print("2. Click 'Download' button")
             print("3. Extract the zip file")
-            print("4. Place 'games.csv' in your 'data/' folder")
+            print("4. Place 'games_metadata_profile_2024_01.csv' in your 'data/' folder")
             print("\nYour data folder should look like:")
             print("  data/")
-            print("    └── games.csv")
+            print("    └── games_metadata_profile_2024_01.csv")
             print("="*60)
             return
 
