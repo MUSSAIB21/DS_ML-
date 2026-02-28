@@ -1,0 +1,8 @@
+print("\nPlease download the chess dataset manually:")
+            print("1. Go to: https://www.kaggle.com/datasets/shkarupylomaxim/chess-games-dataset-lichess-2017-may")
+            print("2. Click 'Download' button")
+            print("3. Extract the zip file")
+            print("4. Place the csv in your 'data/' folder and rename it to games_metadata_profile_2024_01.csv")
+            print("\nYour data folder should look like:")
+            print("  data/")
+            print("    └── games_metadata_profile_2024_01.csv")
