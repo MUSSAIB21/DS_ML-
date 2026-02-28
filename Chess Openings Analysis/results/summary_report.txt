@@ -1,0 +1,14 @@
+CHESS OPENINGS ANALYSIS - SUMMARY REPORT
+==================================================
+Total games analyzed: 127,825
+Unique openings: 2186
+ELO range: 800 - 2980
+
+Best opening overall: King's Pawn Game: Damiano Defense
+
+Best openings by ELO category:
+  Beginner (<1200): King's Pawn Game: Damiano Defense (69.9% win rate)
+  Novice (1200-1400): Queen's Gambit Declined: Marshall Defense (63.1% win rate)
+  Intermediate (1400-1600): Horwitz Defense (61.4% win rate)
+  Advanced (1600-2000): French Defense: Normal Variation (67.2% win rate)
+  Expert (>2000): Sicilian Defense: Nyezhmetdinov-Rossolimo Attack (61.9% win rate)
